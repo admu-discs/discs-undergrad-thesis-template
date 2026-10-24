@@ -33,7 +33,7 @@ Keeping the thesis in Git gives you history and backups, and makes it easy to sh
 
 - **VS Code** with the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension builds on save and shows the PDF beside your source. The [dev container guide](dev-containers.md) sets this up for you.
 - **TeXstudio** or **TeXworks** are standalone LaTeX editors that work with any TeX distribution.
-- **Overleaf** works in the browser. Upload the repository as a ZIP, set `FinalManuscript.tex` as the main document, and choose the pdfLaTeX compiler.
+- **Overleaf** works in the browser with nothing to install. Open the [Overleaf version of this template](https://www.overleaf.com/project/6adc2cb5429f3d746e41847c) and choose **Menu → Copy Project** to get your own copy, already set up to build. If you skip the local install, go straight to [Make it your thesis](#5-make-it-your-thesis).
 
 ## 4. Build the sample thesis
 

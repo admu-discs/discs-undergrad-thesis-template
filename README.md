@@ -2,6 +2,8 @@
 
 A LaTeX template for undergraduate theses in the Department of Information Systems and Computer Science (DISCS), Ateneo de Manila University. The `discsthesis` class follows the layout of the official Word template, *CS Thesis Template (with biblio in PCSC-ACM format) A4 v202102*, so you can write in LaTeX and still meet the department's formatting rules.
 
+Prefer working in the browser? Open the [Overleaf version](https://www.overleaf.com/project/6adc2cb5429f3d746e41847c) and choose **Menu → Copy Project** to make your own copy.
+
 ## Features
 
 - A4 paper with 1.5 in left margin and 1 in top, bottom, and right margins
@@ -28,6 +30,8 @@ ACM-Reference-Format.bst bibliography style
 ```
 
 ## Building
+
+On Overleaf, the [Overleaf version](https://www.overleaf.com/project/6adc2cb5429f3d746e41847c) builds as soon as you copy it, with nothing to set up.
 
 With a TeX distribution installed (TeX Live, MacTeX, or MiKTeX), run this from the repository root:
 
