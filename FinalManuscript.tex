@@ -1,0 +1,42 @@
+\documentclass{discsthesis}
+\usepackage{multirow}
+\usepackage{fancyvrb}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{lscape}
+\usepackage{adjustbox}
+\usepackage{longtable}
+
+%% Title page. Break the title into an inverted triangle with \\.
+\ThesisTitle{TOWARDS A MORE FINE-TUNED GEOLOCATION\\APPROXIMATION MODEL FOR DISASTER TWEETS}
+\ThesisAuthor{Joshua Roland B. Cruz} % one author per line, separated by \\
+\ThesisDefenseYear{2019}
+%\ThesisDegree{Bachelor of Science in Computer Science}
+
+\begin{document}
+
+\maketitle
+\input{frontmatter/abstract}
+\input{frontmatter/acknowledgements}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\input{chapters/01_introduction}
+\input{chapters/02_related_literature}
+\input{chapters/03_methodology}
+\input{chapters/04_results}
+\input{chapters/05_conclusions}
+\input{chapters/06_recommendations}
+
+\bibliography{references}
+
+\appendix
+\input{appendices/a_geolocation_query_visualization}
+\input{appendices/b_sample_geojson_tweet_output}
+\input{appendices/c_methodology1_tweet_query}
+\input{appendices/d_methodology2_tweet_query}
+
+\end{document}
