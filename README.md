@@ -6,7 +6,7 @@ A LaTeX template for undergraduate theses in the Department of Information Syste
 
 - A4 paper with 1.5 in left margin and 1 in top, bottom, and right margins
 - Times 12 pt, double spaced, justified, with 0.5 in paragraph indents
-- Title page built from `\ThesisTitle`, `\ThesisAuthor`, `\ThesisDefenseYear`, and `\ThesisDegree`
+- Title page built from a few commands in the preamble (see [Title page](#title-page))
 - Roman page numbers in the front matter, Arabic from Chapter I, placed top right
 - `CHAPTER I` / `TITLE` headings, bold numbered sections, and Word-style table of contents, list of figures, and list of tables
 - Bold centred captions, with figures captioned below and tables above
@@ -36,6 +36,37 @@ latexmk -pdf FinalManuscript.tex
 ```
 
 `latexmk` runs `pdflatex` and BibTeX as many times as needed and writes `FinalManuscript.pdf`. Run `latexmk -c` to clear the build files.
+
+## Title page
+
+Set the title page details in the preamble of `FinalManuscript.tex`, before `\begin{document}`. Then call `\maketitle` as the first thing in the document.
+
+```latex
+\documentclass{discsthesis}
+
+\ThesisTitle{TOWARDS A MORE FINE-TUNED GEOLOCATION\\APPROXIMATION MODEL FOR DISASTER TWEETS}
+\ThesisAuthor{Juan Dela Cruz\\Maria Santos}
+\ThesisDefenseYear{2027}
+
+\begin{document}
+\maketitle
+```
+
+- `\ThesisTitle{...}` sets the title, in capitals. Use `\\` to break it into lines that form an inverted triangle.
+- `\ThesisAuthor{...}` lists the authors, one per line, separated by `\\`.
+- `\ThesisDefenseYear{...}` sets the year of the defense. It defaults to the current year.
+
+These three have defaults that fit most DISCS theses. Set them only when yours differs:
+
+```latex
+\ThesisDegree{Bachelor of Science in Management Information Systems}
+\ThesisDepartment{Department of Information Systems\\and Computer Science}
+\ThesisUniversity{Ateneo de Manila University}
+```
+
+- `\ThesisDegree{...}` defaults to *Bachelor of Science in Computer Science*.
+- `\ThesisDepartment{...}` defaults to *Department of Information Systems and Computer Science*, split over two lines.
+- `\ThesisUniversity{...}` defaults to *Ateneo de Manila University*.
 
 ## Guides
 
