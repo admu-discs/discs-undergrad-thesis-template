@@ -91,4 +91,4 @@ Check the [open issues](https://github.com/admu-discs/discs-undergrad-thesis-tem
 
 ## Credits
 
-Based on `discsthesis.cls` v3.1 (Coronel, Estuar, Vergara, Vidal, 2005), itself based on `admuthesis.cls` by F. P. Muga II.
+Based on `discsthesis.cls` v3.1 (Coronel, Estuar, Vergara, Vidal, 2005), itself based on `admuthesis.cls` by F. P. Muga II. Modified by Saavedra, 2026.
